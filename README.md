@@ -24,7 +24,17 @@ This is a **full-stack booking system** built with **Laravel (API)** as the back
 - Vue 3 SPA with responsive UI
 - Error handling and validations
 
----
+## 📷 Screenshots
+
+### 🔐 Login Page
+![Login Page](screenshots/login-page.PNG)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.PNG)
+
+### 📝 Booking Form
+![Booking Form](screenshots/booking-form.PNG)
+
 
 ## 📁 Project Structure
 
