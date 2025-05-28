@@ -12,6 +12,12 @@ use Illuminate\Http\Request;
 // Public auth routes
 Route::post('login',    [AuthController::class,'login']);
 Route::post('register', [AuthController::class,'register']);
+Route::post('/password/forgot', [AuthController::class, 'forgotPassword']);
+
+// Password reset
+Route::post('/password/reset', [AuthController::class, 'resetPassword'])
+->name('password.reset');
+
 
 Route::middleware(['auth:sanctum','admin'])->get('/user', function (Request $request) {
     return $request->user();
