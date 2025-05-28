@@ -36,8 +36,8 @@ This is a **full-stack booking system** built with **Laravel (API)** as the back
 ### 📧 Email Verification Page
 ![Email Page](screenshots/email.PNG)
 
-### ❓ Forget Password Page
-![Forget Password Page](screenshots/forget-password.PNG)
+### ❓ Forgot Password Page
+![Forgot Password Page](screenshots/forgot-password.PNG)
 
 ### 🔁 Reset Password Page
 ![Reset Password Page](screenshots/reset-password.PNG)
