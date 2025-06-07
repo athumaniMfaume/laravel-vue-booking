@@ -34,6 +34,20 @@ class ServiceController extends Controller
         return response()->json(['services' => $services], 200);
     }
 
+        public function services()
+    {
+
+        $services = Service::all();
+
+        if ($services->isEmpty()) {
+            return response()->json([
+                'error' => 'No services found for this business.'
+            ], 404);
+        }
+
+        return response()->json(['services' => $services], 200);
+    }
+
     public function show($id)
     {
         $user = Auth::user();

@@ -56,6 +56,7 @@ Route::middleware(['auth:sanctum','business'])->prefix('business')->group(functi
 
 // ─── USER ────────────────────────────────────────────────────────────────
 Route::middleware(['auth:sanctum','user'])->prefix('user')->group(function(){
+    Route::get('services',          [ServiceController::class,'services']);
     Route::get('bookings',            [BookingController::class,'index']);
     Route::get('bookings/{id}',       [BookingController::class,'show']);
     Route::post('bookings',           [BookingController::class,'store']);

@@ -29,7 +29,7 @@
 
       <div class="form-group">
         <label for="opening_hours">Opening Hours:</label>
-        <input id="opening_hours" v-model="form.opening_hours" type="text" />
+        <input id="opening_hours" v-model="form.opening_hours" type="datetime-local" />
         <div v-if="errors.opening_hours" class="error-message">
           <span v-for="(error, index) in errors.opening_hours" :key="index">{{ error }}</span>
         </div>
